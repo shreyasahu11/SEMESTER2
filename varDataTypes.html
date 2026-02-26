@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title> JAVA SCRIPT</title>
+</head>
+<body>
+//JAVA SCRIPT
+    <script>
+        //JS value types
+        // Primitve- immutable single value data type in js
+        //String, Number, Boolean, Undefined, null, DigInt and Symbol
+        
+        //String
+    var myName="shreya sahu"
+    console.log(myName);
+    //number
+    var myMob= 9452833331;
+    console.log(myMob);
+    //boolean
+    var isMarried= false;
+    console.log(myName + "is married?"+ isMarried);
+    //undefined
+    var myEmail="shreya123@gmail.com";
+    console.log(myEmail);
+    console.log(typeof(myEmail));
+    //null
+    var myAddress=null;
+    console.log(myAddress);
+    console.log(typeof(myAddress));
+    //Bigint
+    var myNum=BigInt(9887766);
+    console.log(myNum);
+    console.log(typeof(myNum));
+    //Symbol
+    var var1=Symbol("vikas");
+    var var2=Symbol("vikas");
+    console.log(var1==var2);
+
+    //Reference Type(Object)-- mutable in memory and keep the data in key value pair
+    //object{}, function(), array[]
+    let myInfo={
+        name:"shreya",
+        age:19,
+        isMarried:false,
+        address:"jhansi",
+        branch:"CSE",
+        section:23
+
+    };
+    console.log(myInfo);
+    console.log(myInfo.name);
+   //object length
+    var keys=Object.keys(myInfo);
+    console.log(keys.length);
+
+    //function = block of code to perform particular task
+    function cal() {
+        var num1=45;
+        var num2=40;
+        var add=num1+num2;
+        console.log("addition of two numbers is " + add);
+    }
+    cal();
+
+    //array - collection of any datatype
+    let studentList=["shreya", "anshika", "suhani","ananya"];
+    console.log(studentList[0]);
+    //for different data types
+    let stu1=["shreya", 19, false, "GZB", "CSE",null, 23];
+    console.log(stu1);
+    console.log(stu1.length);
+
+    </script>
