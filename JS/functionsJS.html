@@ -42,6 +42,80 @@
                 msg2(4,2);
     //IIFE:- an IIFE (immediately invoked function expression) is a JavaScript function that runs as soon as it is defined
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let num=[4,6,7,8,9,3,2,1];
+
+//map
+let square=num.map(n=>n*n)
+console.log(square);
+
+let sum=num.reduce((total,n)=>total+n);
+console.log(sum);
+
+let sorting=num.filter(n=>n>2);
+console.log(sorting);
+
+
+//local Storage
+let myInfo={
+    Name:'shreya',
+    age:19,
+    course:'Btech',
+    address:'jhansi',
+    mob:9452833441,
+    email:'sahushreya211@gmail.com'
+}
+localStorage.setItem('myInfo',JSON.stringify(myInfo));
+
+let storeData=JSON.parse(localStorage.getItem('myInfo'));
+console.log(storeData);
+
+
     </script>
 </body>
 </html>
