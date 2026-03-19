@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title> FUNCTIONS IN JS</title>
+</head>
+<body>
+    <script>
+        //function:- block of code used or defined to perform specific tasks
+        //Types of Functions
+            //Normal function:- with parameter, without para,and with default
+
+                //normal fn without parameters.
+                function demo(){
+                    console.log("hello JS");
+                }
+                demo();//function calling
+
+                //with parameters..
+                function demo1(text){
+                    console.log("hello"+text);
+                }
+                demo1("react");
+                // default parametes 
+                function add(a,b){
+                    console.log("addition is " + (a+b));
+                }
+                add(1,2);
+
+               
+                //anonymous function:
+
+                //arrowfunction using multiple lines
+
+                let msg2=(a,b)=>{
+                    var num1=a;
+                    var num2=b;
+                    var res=num1/num2;
+                    console.log("result is "+ res);
+                }
+                msg2(4,2);
+    //IIFE:- an IIFE (immediately invoked function expression) is a JavaScript function that runs as soon as it is defined
+    
+    </script>
+</body>
+</html>
