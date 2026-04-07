@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name="viewport" content="width=device-width , initial-scale=1.0">
-    <title> Loops in JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement</title>
 </head>
 <body>
-<script>
-    // conditional statement:- allows code to make decisions and run different blocks of code based on whether a condition is true or not
+    <script>
+        // conditional statement:- allow code to make decisions and run different blocks of code based on whether a condition is true or false.
+
+        //if.condition....
+
+        //age validation for vote casting!
+
+        let age=23;
+        if(age>=18){
+            console.log(age + " is a valid age of vote casting!");
+        }
+
+        // if...else----------
+        let myAge=92;
+
+        if(myAge<18){
+            console.log("not valid age");
+        }
+        else{
+            console.log("valid age");
+        }
+        // switch......
+        let grade='C';
+
+        switch(grade){
+            case 'A':result="First Division";
+            break;
+            case 'B':result="Second Division";
+            break;
+            case 'C':result="Third Division";
+            break;
+            default:result="Fail";
+        }
+        console.log(result);
+
+        // if else if else.............
+
+        let marks=35;
+
+        if(marks>=60){
+            console.log("First Grade");
+        }
+        else if(marks<60 && marks>=40){
+            console.log("Second Grade");
+        }
+        else if(marks<40 && marks>=33){
+            console.log("Third Grade");
+        }
+        else{
+            console.log("Fail");
+        }
+    </script>
     
-    //age validation for vote casting:
-    let age=23;
-    if(age>=18){
-        console.log(age + "is a valid age of vote casting!");
-    }
-
-    // if-else ------
-    let myAge=20;
-    if(myAge<18){
-        console.log("not valid age");
-    } 
-    else{
-        console.log("valid age");
-    }
-    //switch case ......
-    let grade='A';
-    switch(grade){
-        case 'A': result="first division";
-        break;
-
-        case 'B': result="second division";
-        break;
-         
-        case 'C': result="third division";
-        break;
-        default: result="FAIL";
-    }
-    console.log(result);
-    
-    //if else if else...........
-
-    let marks=65;
-    if(marks>=60){
-        console.log("first grade");
-    }
-    else if (marks<60 && marks>=40){
-        console.log("second grade");
-    }
-    else if(marks<40 && marks>=33){
-        console.log("third grade");
-    }
-    else {
-        console.log("FAIL");
-    }
-
-</script>    
 </body>
 </html>
