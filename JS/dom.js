@@ -1,4 +1,3 @@
-
 // document.writeln("hello");
 
 function result(){
